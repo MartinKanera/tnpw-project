@@ -1,0 +1,51 @@
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/hero.png);
+  background-position: 70% top;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main > h1 {
+  color: white;
+  width: 80%;
+  margin-bottom: 20%;
+}
+
+main > h1 > span.intro {
+  opacity: 0.7;
+}
+
+main > h1 > span.name {
+  opacity: 1;
+  text-shadow: 0 0 10px rgb(202, 202, 202), 0 0 15px rgb(202, 202, 202);
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+
+  main > h1 {
+    margin-left: 10%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    background-size: object-fit;
+    align-items: flex-end;
+  }
+
+  main > h1 {
+    margin-left: 2%;
+    margin-bottom: 10%;
+    font-size: 3rem;
+  }
+}
