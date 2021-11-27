@@ -11,9 +11,8 @@ main {
 }
 
 main > h1 {
-  color: white;
-  width: 80%;
-  margin-bottom: 20%;
+  width: 70%;
+  margin-bottom: 25% !important;
 }
 
 main > h1 > span.intro {
@@ -28,24 +27,20 @@ main > h1 > span.name {
 @media screen and (min-width: 576px) {
   main {
     background-repeat: no-repeat;
-    align-items: center;
   }
 
   main > h1 {
     margin-left: 10%;
-    font-size: 3rem;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   main {
-    background-size: object-fit;
     align-items: flex-end;
   }
 
   main > h1 {
     margin-left: 2%;
-    margin-bottom: 10%;
-    font-size: 3rem;
+    margin-bottom: 10% !important;
   }
 }

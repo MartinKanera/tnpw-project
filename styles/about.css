@@ -1,0 +1,98 @@
+main {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.info-section.right .img-face {
+  order: 2;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgb(202, 202, 202), 0 0 15px rgb(202, 202, 202);
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+main .content {
+  margin-bottom: 4rem;
+  flex: 1 1 0;
+}
+
+main .img-face {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  filter: var(--drop-shadow);
+}
+
+.face1 {
+  background-image: url('../assets/nf-face1.png');
+}
+
+.face2 {
+  background-position-y: bottom;
+  background-image: url('../assets/nf-face2.jpg');
+}
+
+.face3 {
+  background-position-y: top;
+  background-image: url('../assets/nf-face3.jpg');
+}
+
+.face4 {
+  background-position-y: top;
+  background-image: url('../assets/nf-face4.jpg');
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 4rem 10%;
+    justify-content: space-between;
+  }
+
+  .info-section {
+    flex-direction: row;
+    margin-bottom: 8rem;
+  }
+
+  .info-section.right {
+    flex-direction: row-reverse;
+  }
+
+  main .content {
+    margin-right: 4rem;
+  }
+
+  .info-section.right .content {
+    margin-right: 0;
+    margin-left: 4rem;
+    text-align: right;
+  }
+
+  main .img-face {
+    width: 18rem;
+    height: 18rem;
+  }
+}

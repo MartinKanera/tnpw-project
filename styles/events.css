@@ -1,0 +1,83 @@
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+
+.event {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: var(--color-tertiary);
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 10px 10px #000);
+}
+
+h2.event-location {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.event-description {
+  font-size: 0.75rem;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  margin-top: 1.7rem;
+  text-transform: uppercase;
+  border-radius: 16px;
+  border: solid white 2px;
+  color: var(--color-secondary);
+  background-color: var(--color-tertiary);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--color-tertiary);
+  background-color: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 4rem 2rem;
+  }
+
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .event {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .event > div {
+    max-width: 66%;
+  }
+
+  button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .events {
+    width: 75%;
+  }
+}
